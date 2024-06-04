@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo-home img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-menu-home {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu-home li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.hero-home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text-home {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.hero-text-home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text-home p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-text-home button {
+    padding: 10px 20px;
+    background-color: #4FD1C5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero-text-home button:hover {
+    background-color: #3AB9AC;
+}
+
+
+
+.hero-text-home-left button {
+    padding: 10px 20px;
+    background-color: #4FD1C5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.hero-text-home-left button:hover {
+    background-color: #3AB9AC;
+}
+
+
+
+
+
+    .login-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+        padding: 20px;
+    }
+    .logo {
+        position: absolute;
+        top: -150px;
+        right: 20px;
+    }
+
+    .jurado{
+        display: flex;
+        align-items: center; /* Alinea los items verticalmente al centro */
+        justify-content: center; /* Alinea los items horizontalmente al centro */
+        height: 100vh;
+    }
+
+
+    .reglas-text
+         {
+            display: flex;
+            align-items: center; /* Alinea el texto verticalmente al centro */
+            justify-content: center; /* Alinea el texto horizontalmente al centro */
+            padding: 20px;
+        }
+    
+
+    .d-flex-center{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .hero-text-home-left{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+        color: #fff;
+        font-family: 'Noto Sans', sans-serif;
+        margin-left: 50px;
+    }
+    .card-jurado{
+
+       /* No repetir la imagen */
+         height: 450px;
+         border-top-left-radius: 35px;
+         padding: 20px;
+         text-align: center; /* Centra el texto */
+         color: white; /* Color del texto */
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 360px; /* Ancho fijo para las tarjetas */
+         
+         
+    }
+    .team-1{
+        background-image: url('../images/team/team.png');
+        background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+        background-position: center; /* Centrar la imagen */
+        background-repeat: no-repeat;
+    }
+    .team-2{
+        background-image: url('../images/team/team2.png');
+        background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+        background-position: center; /* Centrar la imagen */
+        background-repeat: no-repeat;
+        border-radius: 0px;
+    }
+
+    .team-3{
+        background-image: url('../images/team/Group\ 10.png');
+        background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+        background-position: center; /* Centrar la imagen */
+        background-repeat: no-repeat;
+        border-radius: 0%;
+        border-top-right-radius: 25px;    }
+
+
+    .text-card{
+        border-top-left-radius: 20px;
+        background-color: #131414;
+        position: absolute;
+        top: 320px;
+        height: 130px;
+         padding: 20px;
+            
+    }
+    .contenedor {
+        display: flex;
+        gap: 30px; /* Espacio entre los divs */
+    }
+    .image-2{
+        border-radius: 15px;
+        padding-left: 35px;
+    }
