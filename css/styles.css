@@ -282,13 +282,13 @@ tr img{
     margin-bottom: auto;
     margin-top: auto;
     height: 60px;
-    background-color: #353b48;
+    background-color: #ffffff;
     border-radius: 30px;
     padding: 10px;
     }
 
     .search_input{
-    color: white;
+    color: rgb(0, 0, 0);
     border: 0;
     outline: 0;
     background: none;
@@ -320,4 +320,15 @@ tr img{
     border-radius: 50%;
     color:white;
     text-decoration:none;
+    }
+    .logout{
+        background-color: #4FD1C5;
+        width: 280px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .img-dasboard{
+        width: 20px;
+        
+
     }
