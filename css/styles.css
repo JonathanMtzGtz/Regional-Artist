@@ -204,3 +204,120 @@ body {
         border-radius: 15px;
         padding-left: 35px;
     }
+    .card-hero{
+        margin-top: 50px;
+        background-image: url('../images/bg-dash.png');
+        background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+        background-position: center; /* Centrar la imagen */
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        height: 300px;
+      
+
+    }
+     .text-card-dasboard{
+        color: #fff;
+        background-color: #30363A;
+        position: absolute;
+        top: 140px;
+        height: 80px;
+        width: 300px;
+         padding: 15px;
+         margin-left: 30px;
+         border-radius: 10px;
+     }
+.tabla{
+    width: 100%;
+}
+
+   .tabla-title{
+    background-color: #D17E4F;
+    border-radius: 20px;
+    height: 60px;
+    padding: 20px;
+
+    border-collapse: collapse;
+    
+   
+   }
+
+
+
+
+   .fila-table{
+    background-color: #fff;
+    
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    overflow: hidden; 
+    border-collapse: collapse;
+    
+   }
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px; /* Ajusta el valor según tus preferencias */
+    overflow: hidden; /* Para asegurarte de que los bordes redondeados se vean correctamente */
+    margin-top: -45px;
+    
+}
+tr img{
+    padding: 10px;
+}
+
+
+
+
+.search{
+    position: absolute;
+        top: 40px;
+        right: 10px;
+        height: 80px;
+        width: 300px;
+         padding: 15px;
+         margin-left: 30px;
+         border-radius: 10px;
+   }
+   .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
