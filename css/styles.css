@@ -228,13 +228,14 @@ body {
      }
 .tabla{
     width: 100%;
+   
 }
 
    .tabla-title{ /*  barra de la tabla  */
     background-color: #D17E4F;
     border-radius: 20px;
     height: 60px;
-    padding: 20px;
+   
 
     border-collapse: collapse;
     
@@ -285,7 +286,7 @@ tr img{ /*  imagen user  */
     margin-top: auto;
     height: 60px;
     background-color: #ffffff;
-    border-radius: 30px;
+    border-radius: 15px;
     padding: 10px;
     }
 
@@ -302,7 +303,7 @@ tr img{ /*  imagen user  */
 
     .searchbar:hover > .search_input{
     padding: 0 10px;
-    width: 450px;
+    width: 200px;
     caret-color:red;
     transition: width 0.4s linear;
     }
@@ -330,7 +331,15 @@ tr img{ /*  imagen user  */
         padding: 10px;
     }
     .img-dasboard{
-        width: 20px;
+        width: 50px !important;
         
 
+    }
+    .search_input ,svg{
+        width: 15px;
+    }
+
+
+    .fila-table,img{
+        width: 80px;
     }
