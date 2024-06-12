@@ -622,6 +622,3 @@ body, html {
     width: 100%;
     overflow-x: hidden; /* Evitar el desplazamiento horizontal */
 }
-.left-sidebar{
-    padding: 10px;
-}
