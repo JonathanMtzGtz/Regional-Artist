@@ -334,9 +334,10 @@ tr img{ /*  imagen user  */
     }
     .logout{
         background-color: #4FD1C5;
-        width: 280px;
+        width: 240px;
         border-radius: 10px;
         padding: 10px;
+        
     }
     .img-dasboard{
         width: 50px !important;
@@ -621,4 +622,7 @@ tr img{ /*  imagen user  */
 body, html {
     width: 100%;
     overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
+.active{
+    width: 250px;
 }
