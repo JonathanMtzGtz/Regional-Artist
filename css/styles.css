@@ -144,12 +144,12 @@ body {
     .hero-text-home-left{
         position: absolute;
         top: 50%;
-        right: 60%;
+        right: 40%;
         transform: translateY(-50%);
-        text-align: left;
+   
         color: #fff;
         font-family: 'Noto Sans', sans-serif;
-        margin-left: 50px;
+        
         width: 600px;
     }
     .card-jurado{
@@ -427,9 +427,13 @@ tr img{ /*  imagen user  */
  
 
 
+ 
     
+        
+
     @media (max-width: 600px) {
         .hero-text-home h1 {
+            
          text-align: center;
       
          font-size: 40px;
@@ -482,9 +486,26 @@ tr img{ /*  imagen user  */
         }
     }
 
+    @media (max-width: 600px) {
+        .hero-text-home-left{
+            position: absolute;
+            top: 50%;
+            right: 20%;
+            transform: translateY(-50%);
+       
+            color: #fff;
+            font-family: 'Noto Sans', sans-serif;
+            
+            width: 280px;
+        }
+    
+    }
+
+    
 
     .footer{
         padding: 50px;
+        background-color: #30363A;
     }
     .text-footer{
     position: absolute;
@@ -510,3 +531,34 @@ tr img{ /*  imagen user  */
     .contacto-footer{
         margin-right: 20px;
     }
+
+    @media (max-width: 992px) {
+        .login100-form-2 {
+          width: 30%;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      
+        .login100-more-2 {
+          width: 70%; 
+        }
+      }
+      .logo-registro{
+        position: absolute;
+        top: 40px;
+        right: -300px;
+        height: 80px;
+        width: 80px;
+         padding: 15px;
+         margin-left: 30px;
+         border-radius: 10px;
+      }
+
+      .items-registro{
+
+        display: flex;
+
+      }
+      .itemre{
+        margin-left: 10px;
+      }
