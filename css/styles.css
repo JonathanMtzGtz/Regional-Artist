@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+   
 }
 
 body {
@@ -463,6 +465,14 @@ tr img{ /*  imagen user  */
         .jurado {
         height: 1460px;
         }
+        .card-jurado{
+            width: 100%;
+        }
+        .intrucciones-image,.img-fluid{
+           width: 100vh;
+           padding-left: 0% !important;
+           border-radius: 0% !important;
+        }
     }
     
     @media (max-width: 600px) {
@@ -546,9 +556,9 @@ tr img{ /*  imagen user  */
       .logo-registro{
         position: absolute;
         top: 40px;
-        right: -300px;
-        height: 80px;
-        width: 80px;
+        right: 250px;
+        height: 60px;
+        width: 60px;
          padding: 15px;
          margin-left: 30px;
          border-radius: 10px;
@@ -559,6 +569,59 @@ tr img{ /*  imagen user  */
         display: flex;
 
       }
-      .itemre{
-        margin-left: 10px;
+    
+      .img-form{
+        background-image: url('../images/registro/registro.png');
+       
+        width: 100vh;
+        height: 100vh;
+        background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+        background-position: center; /* Centrar la imagen */
+        background-repeat: no-repeat;
+     
       }
+      .formm{
+        height:100vh;
+         overflow-y: scroll;
+         background-color:#30363A;
+      }
+
+    .form-item{
+        display: flex; 
+        gap: 15px;  
+        
+    }
+    .body-formulario {
+        color: #fefefe;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+    .form-control{
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+    .boton-formulario{
+        width: 55%;
+        
+        text-align: center;
+    }
+
+.form-group{
+    width: 100%;
+}
+.form-boton{
+    text-align: center;
+   
+}
+.bg-color{
+    background-color: 30363A;
+}
+body, html {
+    width: 100%;
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
+.left-sidebar{
+    padding: 10px;
+}
