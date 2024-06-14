@@ -236,12 +236,13 @@ body {
      }
 .tabla{
     width: 100%;
+    background-color: #30363A;
    
 }
 
    .tabla-title{ /*  barra de la tabla  */
-    background-color: 4FD1C5;
-    border-radius: 20px;
+    background-color: #4FD1C5;
+    border-radius: 30%;
     height: 60px;
     border-collapse: collapse;
  
@@ -251,11 +252,11 @@ body {
 
 
    .fila-table{
-    background-color: #fff;
+    background-color: #ffffff;
     height: 80px;
     
     border-radius: 10px;
-    border: 1px solid #ddd;
+    border: 5px solid #30363A;
     overflow: hidden; 
     border-collapse: collapse;
 
@@ -264,7 +265,7 @@ body {
    table {
     width: 100%;
     border-collapse: collapse;
-    border-radius: 15px; /*bordes redondeados  */
+    border-radius: 20px; /*bordes redondeados  */
     overflow: hidden; /*  bordes redondeados  */
     margin-top: -45px;
     
@@ -278,7 +279,7 @@ tr img{ /*  imagen user  */
 /* barra de buscador */
 .search{
     position: absolute;
-        top: 40px;
+        top: 20px;
         right: 0px;
         height: 80px;
         width: 300px;
@@ -290,6 +291,7 @@ tr img{ /*  imagen user  */
     margin-bottom: auto;
     margin-top: auto;
     height: 60px;
+    
     background-color: #ffffff;
     border-radius: 15px;
     padding: 10px;
@@ -337,7 +339,7 @@ tr img{ /*  imagen user  */
         
     }
     .img-dasboard{
-        width: 50px !important;
+        width: 160px !important;
         
 
     }
@@ -371,7 +373,12 @@ tr img{ /*  imagen user  */
        
     }
     .icono{
-        width: 56px !important;
+        width: 50px !important;
+      
+    }
+    td{
+        text-align: center;
+
     }
  
 
@@ -622,4 +629,13 @@ body, html {
 }
 .active{
     width: 250px;
+}
+.icono-descarga{
+    width: 45px !important;
+    text-align: center;
+}
+.fila-redonda{
+    background-color:red ;
+    border-radius: 20px;
+
 }
