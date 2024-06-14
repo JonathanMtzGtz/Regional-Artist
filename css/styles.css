@@ -240,14 +240,11 @@ body {
 }
 
    .tabla-title{ /*  barra de la tabla  */
-    background-color: #D17E4F;
+    background-color: 4FD1C5;
     border-radius: 20px;
     height: 60px;
-   
-
     border-collapse: collapse;
-    
-   
+ 
    }
 
 
