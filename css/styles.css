@@ -195,12 +195,13 @@ body {
     .text-card{
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        background-color: #0a0a0a;
+        background-color: #545454 ;
        /*  background-color: #545454;*/
         position: absolute;
         top: 320px;
         height: 130px;
          padding: 20px;
+         
 
             
     }
@@ -212,7 +213,7 @@ body {
         border-radius: 15px;
         padding-left: 35px;
     }
-    .card-hero{ /*  imagen hero dasboard  */
+    .card-hero{ /*  imagen hero dasboard aprobados */
         margin-top: 20px;
         background-image: url('../images/bg-dash.png');
         background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
@@ -223,6 +224,22 @@ body {
       
 
     }
+
+    .card-hero-solicitudes{ /*  imagen hero dasboard solicitudes */
+        margin-top: 20px;
+        background-image: url('../images/bg-solicitudes.png');
+        background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+        background-position: center; /* Centrar la imagen */
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        height: 300px;
+      
+
+    }
+    
+
+
+
      .text-card-dasboard{ /*  texto del hero dasboard */
         color: #fff;
         background-color: #30363A;
@@ -242,6 +259,13 @@ body {
 
    .tabla-title{ /*  barra de la tabla  */
     background-color: #4FD1C5;
+    border-radius: 30%;
+    height: 60px;
+    border-collapse: collapse;
+ 
+   }
+   .tabla-title-rechazados{ /*  barra de la tabla  */
+    background-color: #D17E4F;
     border-radius: 30%;
     height: 60px;
     border-collapse: collapse;
@@ -338,11 +362,14 @@ tr img{ /*  imagen user  */
         padding: 10px;
         
     }
-    .img-dasboard{
-        width: 160px !important;
-        
 
+    /*  logo Omoda Dashboard  */
+    .img-dasboard{
+        
+       width: 180px;
     }
+
+
     .search_input ,svg{
         width: 15px;
     }
@@ -635,7 +662,12 @@ body, html {
     text-align: center;
 }
 .fila-redonda{
-    background-color:red ;
-    border-radius: 20px;
+    background-color: #ffffff;
+    border: 5px solid #ffffff;
+    border-radius: 50px;
 
+}
+/* iconos del dash menu */
+.img-dash{
+    width: 34px;
 }
