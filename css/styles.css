@@ -213,6 +213,24 @@ body {
         border-radius: 15px;
         padding-left: 35px;
     }
+
+
+
+   
+    .card-hero-dashboard{ /*  imagen hero dasboard aprobados */
+        margin-top: 20px;
+        background-image: url('../images/bg-dash.png');
+        background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+        background-position: center; /* Centrar la imagen */
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        height: 300px;
+      
+
+    }
+
+
+
     .card-hero{ /*  imagen hero dasboard aprobados */
         margin-top: 20px;
         background-image: url('../images/bg-dash.png');
