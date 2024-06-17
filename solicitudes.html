@@ -29,6 +29,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     </head>
 
 
@@ -103,8 +104,8 @@
                             <h2 class="mt-2">Solicitudes</h2>
                             <div class="contador">
                                 <div class="text-contador">
-                                    <h1 style="font-size: 50px;">
-                                        41
+                                    <h1 style="font-size: 50px;" id="solicitudes">
+                                        
                                     </h1>
                                 </div>
                         
@@ -133,92 +134,47 @@
                             <thead class="tabla-title  ">
                                 <tr >
                                     <th class="text-center text-white">Nombre</th>
+                                    <th class="text-center text-white">Nombre</th>
                                     <th class="text-center text-white" >Escuela</th>
                                     <th class="text-center text-white">Correo</th>
                                     <th class="text-center text-white">Teléfono</th>
                                     <th class="text-center text-white">Ver archivo</th>
-                                    <th class="text-center text-white">Decargar</th>
                                     <th class="text-center text-white">Rechazar</th>
                                     <th class="text-center text-white">Aprobar</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="tbody">
                            
-                              
-                                <tr class="fila-table mt-3">
-                                  
-                                        <td class=""> <img src="images/Avatar.png" alt="">John Doe</td>
-                                    <td>UNAM </td>
-                                    <td>john.doe@example.com</td>
-                                    <td>123-456-7890</td>
-                                    <td ><button id="viewPdfButton">
-                                        <img src="images/icons/ver.svg" alt="" class="icono" >
-                                    </button></td>
-                               
-                                    <td ><img src="images/icons/descargar.svg"  class="icono-descarga"></td>
-                                    <td ><img src="images/icons/rechazados.svg" class="icono" alt=""></td>
-                                    <td ><img src="images/icons/aprobados.svg" class="icono" alt=""></td>
-
-                                
-                                    
-                                </tr>
-                                <tr class="fila-table mt-3">
-                                    <td> <img src="images/Avatar.png" alt="">John Doe</td>
-                                    <td>UTEL</td>
-                                    <td>john.doe@example.com</td>
-                                    <td>123-456-7890</td>
-                                    <td ><button id="viewPdfButton">
-                                        <img src="images/icons/ver.svg" alt="" class="icono" >
-                                    </button></td>
-                               
-                                    <td ><img src="images/icons/descargar.svg"  class="icono-descarga"></td>
-                                    <td ><img src="images/icons/rechazados.svg" class="icono" alt=""></td>
-                                    <td ><img src="images/icons/aprobados.svg" class="icono" alt=""></td>
-                                </tr>
-                            
                             </tbody>
                         </table>
                     </div>
                
 
-     
+                  <!--  <div class="modal fade" id="zoom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">DETALLE DE COSECHA</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body row">
+                            
+                        </div>
+                      </div>
+                      </div>
+                      </div> --> 
         
   
                  <!-- El Modal -->
     <div id="pdfModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <iframe id="pdfViewer" src="Docs/bluprint.pdf"></iframe>
+            <iframe id="pdfViewer" ></iframe>
         </div>
     </div>
-
-    <script>
-        //  modal
-        var modal = document.getElementById("pdfModal");
-
-        // Obtenemos el botón que abre el modal
-        var btn = document.getElementById("viewPdfButton");
-
-        // Obtenemos el elemento <span> que cierra el modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // Cuando el usuario hace clic en el botón, abrimos el modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // Cuando el usuario hace clic en <span> (x), cerramos el modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // Cuando el usuario hace clic en cualquier lugar fuera del modal, lo cerramos
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="js/solicitudes.js"></script>
 
             
 
@@ -240,7 +196,9 @@
         <script src="vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
         <script src="js/main.js"></script>
-        <script src="js/menu-mobile.js"></script>
+      <!-- <script src="js/menu-mobile.js"></script> -->  
+        
+        
 
 
 
