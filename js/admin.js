@@ -33,8 +33,8 @@ button.disabled = true;
     fetch(part2+part1+"/login",options)
     .then(resp => resp.json())
     .then(resp => {
-        console.log(resp);
-        if (resp.message == "User not found") {
+        //console.log(resp);
+        if (resp.message == "User not found" ||  resp.message == "Incorrect password") {
             Swal.fire({
                 position: "top-center",
                 icon: "error",
