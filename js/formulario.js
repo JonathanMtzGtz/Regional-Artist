@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    //const part2 = "http://localhost";
+const part2 = "https://apirest2";
+const button = document.getElementById("btn_form");
+ //const part1 = ":3001/api/regionalartist";
+ const part1 = "-mysql.onrender.com/api/regionalartist";
+
     $('#file').on('change', function(event) {
         const file = event.target.files[0];
         const fileType = file ? file.type : '';
@@ -25,6 +31,12 @@ $(document).ready(function() {
     $('#registroForm').on('submit', function(event) {
         event.preventDefault();
 
+        button.disabled = true;
+  
+        $("#bnt_form").append("<div class='spinner-border text-dark' role='status'>"+
+            "<span class='sr-only'>Loading...</span>"+
+          "</div>");
+
         if ($('#file').hasClass('is-invalid')) {
             alert('Por favor, selecciona un file PDF válido.');
             return;
@@ -32,14 +44,18 @@ $(document).ready(function() {
 
         const formData = new FormData(this);
 
-        fetch('http://localhost:3001/api/regionalartist/saveusuario', {
+        fetch(part2+part1+"/saveusuario", {
             method: 'POST',
             body: formData
         })
         .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
-            alert('Formulario enviado exitosamente.');
+           // alert('Formulario enviado exitosamente.');
+
+           setTimeout(() => {
+            window.location.href = "carga.html";
+           },1000)     
         })
     });
 });

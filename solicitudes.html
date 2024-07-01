@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
 
 
@@ -75,8 +77,8 @@
           
                   <li class="sidebar-item selected p-2 mb-2 ">
                     
-                    <button class="logout"> 
-                        <a href="index.html"><p class="text-white">Cerrar sesión</p></a>
+                    <button class="logout" id="logout"> 
+                        Cerrar sesión
                         
                        </button> 
                   </li>
@@ -116,7 +118,7 @@
                     <div class="container  search">
                         <div class="d-flex justify-content-center h-100">
                           <div class="searchbar text-white">
-                            <input class="search_input" type="text" name="" placeholder="Buscar">
+                            <input class="search_input" id="solicitudes_search" type="text" name="" placeholder="Buscar">
                             <a href="#" class="search_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></a>
                           </div>
                         </div>
@@ -143,7 +145,7 @@
                                     <th class="text-center text-white">Aprobar</th>
                                 </tr>
                             </thead>
-                            <tbody id="tbody">
+                            <tbody id="tbody_socitudes">
                            
                             </tbody>
                         </table>
