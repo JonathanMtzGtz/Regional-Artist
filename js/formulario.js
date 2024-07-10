@@ -1,32 +1,92 @@
 $(document).ready(function() {
-    //const part2 = "http://localhost";
+//    const part2 = "http://localhost";
 const part2 = "https://apirest2";
 const button = document.getElementById("btn_form");
- //const part1 = ":3001/api/regionalartist";
+//const part1 = ":3001/api/regionalartist";
+const email = document.getElementById("email");
  const part1 = "-mysql.onrender.com/api/regionalartist";
 
-    $('#file').on('change', function(event) {
-        const file = event.target.files[0];
-        const fileType = file ? file.type : '';
-        const validFileTypes = ['application/pdf'];
 
-        if (!validFileTypes.includes(fileType)) {
-            $('#file').addClass('is-invalid');
-            $('#fileFeedback').show();
-            $('#filePreview').hide();
-            $('#file').val(''); // Limpiar el campo de file
-        } else {
-            $('#file').removeClass('is-invalid');
-            $('#fileFeedback').hide();
+//validar que no se repita el correo
+email.addEventListener("change", () => {
+var data = {
+  correo : email.value
+}
 
-            const fileReader = new FileReader();
-            fileReader.onload = function() {
-                $('#filePreview').attr('src', fileReader.result);
-                $('#filePreview').show();
-            };
-            fileReader.readAsDataURL(file);
-        }
-    });
+const options = {
+  method: "POST",
+  body: JSON.stringify(data),
+  headers:{
+    'Content-Type':'application/json'
+  }
+}
+
+fetch("http://localhost:3001/api/regionalartist/getEmail",options)
+.then(resp=> resp.json())
+.then(resp => {
+  console.log(resp.length)
+  if (resp.length > 0) {
+    Swal.fire({
+      position: "top-center",
+      icon: "error",
+      title: "lo sentimos, este correo ya fue registrado",
+      showConfirmButton: true,
+      timer: 10000,
+    }); 
+  }
+  email.value = ""
+})
+
+})
+
+const Body = `
+<div style="background-color: #ececec; padding: 0; margin: 0 auto; font-weight: 200; width: 100%!important;">
+  <p> </p>
+  <center>
+    <h2 style="color: #3b693c;">REGISTRO</h2>
+  </center>
+  <br />
+  <table style="width: 600px; margin-left: auto; margin-right: auto; background-color: #ffffff; height: 165px;">
+    <tbody>
+      <tr style="height: 61px;">
+        <td style="width: 590px; background-color: #3b693c; text-align: center; height: 61px;" colspan="2">
+          <h2><span style="color: #ffffff;"><strong>SE ACABA DE GENERAR UNA VACANTE: http://127.0.0.1:5500/admin.html</strong></span></h2>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <p> </p>
+</div>
+`;
+
+$('#file').on('change', function(event) {
+  const file = event.target.files[0];
+  const fileType = file ? file.type : '';
+  const validFileTypes = ['application/pdf'];
+  const maxSizeInBytes = 400 * 1024; // 400 KB en bytes
+
+  if (!validFileTypes.includes(fileType)) {
+      $('#file').addClass('is-invalid');
+      $('#fileFeedback').show();
+      $('#filePreview').hide();
+      $('#file').val(''); // Limpiar el campo de file
+  } else if (file.size > maxSizeInBytes) {
+      alert('El archivo es muy pesado. El tamaño máximo permitido es de 400 KB.');
+      $('#file').val(''); // Limpiar el campo de file
+  } else {
+      $('#file').removeClass('is-invalid');
+      $('#fileFeedback').hide();
+
+      const fileReader = new FileReader();
+      fileReader.onload = function() {
+          $('#filePreview').attr('src', fileReader.result);
+          $('#filePreview').show();
+      };
+      fileReader.readAsDataURL(file);
+  }
+});
+
 
     $('#registroForm').on('submit', function(event) {
         event.preventDefault();
@@ -51,14 +111,59 @@ const button = document.getElementById("btn_form");
         .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
-           // alert('Formulario enviado exitosamente.');
-
-           setTimeout(() => {
-            window.location.href = "carga.html";
-           },1000)     
+            if (data >= 0) {
+                enviar()
+                setTimeout(() => {
+                    window.location.href = "carga.html";
+                   },2000)  
+            }  else{
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: "No se genero el registro, volver a inter o reportar al correo: info@omodaregionalartist.com",
+                    showConfirmButton: false,
+                    timer: 40000
+                  })
+            }  
         })
     });
+
+
+    function enviar(){
+    var data = {
+  
+     toEmail: "veyraabram@gmail.com",
+    fromEmail: "veyraabram@gmail.com",
+    html: Body
+    }
+  
+    var options = {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers:{
+        "Content-Type":"application/json"
+      }
+    }
+  
+    fetch("http://localhost:3001/api/correo/sendEmail",options)
+    .then(resp => resp.json())
+    .then(resp => {
+  console.log(resp)
+  if (resp != 'CORRECTO') {
+    Swal.fire({
+      position: "top-center",
+      icon: "error",
+      title: "Error al enviar el correo, pedir soporte a TI",
+      showConfirmButton: false,
+      timer: 10000,
+    }); 
+  }
+    })
+  
+      }
 });
+
+
 
 function validarNombre(input) { 
     // Eliminar números

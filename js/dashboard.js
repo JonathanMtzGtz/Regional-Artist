@@ -6,8 +6,8 @@ const part2 = "https://apirest2";
     const rechazados = document.getElementById("rechazados");
     const pendientes = document.getElementById("pendientes");
     const logout = document.getElementById("logout");
-  //const part1 = ":3001/api/regionalartist";
-  const part1 = "-mysql.onrender.com/api/regionalartist";
+//const part1 = ":3001/api/regionalartist";
+const part1 = "-mysql.onrender.com/api/regionalartist";
 
     var data = {
         proceso: 2
@@ -23,7 +23,7 @@ const part2 = "https://apirest2";
     fetch(part2+part1+"/getRegistros",options)
     .then(resp => resp.json())
     .then(resp => {
-        //console.log(resp.length)
+       // console.log(resp.length)
         solicitudes.innerHTML = resp.length;
     })
     .then(resp => {
@@ -41,10 +41,10 @@ const part2 = "https://apirest2";
                 aprobados.innerHTML = resp.length;
             })
             .then(resp => {
-                fetch(part1+part2+"/getSolicitudes",options)
+                fetch(part2+part1+"/getSolicitudes",options)
                 .then(resp => resp.json())
                 .then(resp => {
-                   // console.log(resp.length)
+                    console.log(resp.length)
                     pendientes.innerHTML = resp.length;
                 })
             })
