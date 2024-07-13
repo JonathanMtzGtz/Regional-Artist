@@ -33,8 +33,9 @@ fetch("https://apirest2-mysql.onrender.com/api/regionalartist/getEmail",options)
       showConfirmButton: true,
       timer: 10000,
     }); 
+    email.value = "";
   }
-  email.value = ""
+  
 })
 
 })
