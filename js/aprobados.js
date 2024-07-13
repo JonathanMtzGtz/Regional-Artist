@@ -124,7 +124,7 @@ $(document).ready(() => {
           }
         }
       
-        fetch("http://localhost:3001/api/correo/sendEmail",options)
+        fetch("https://apirest2-mysql.onrender.com/api/correo/sendEmail",options)
         .then(resp => resp.json())
         .then(resp => {
       console.log(resp)

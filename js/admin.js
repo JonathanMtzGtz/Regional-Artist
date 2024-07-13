@@ -1,6 +1,7 @@
 $(document).ready(() => {
 //const part2 = "http://localhost";
 const part2 = "https://apirest2";
+
 const email = document.getElementById("email");
 const pass = document.getElementById("password");
 const button = document.getElementById("login");

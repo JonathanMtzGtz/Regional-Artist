@@ -21,7 +21,7 @@ const options = {
   }
 }
 
-fetch("http://localhost:3001/api/regionalartist/getEmail",options)
+fetch("https://apirest2-mysql.onrender.com/api/regionalartist/getEmail",options)
 .then(resp=> resp.json())
 .then(resp => {
   console.log(resp.length)
@@ -145,7 +145,7 @@ $('#file').on('change', function(event) {
       }
     }
   
-    fetch("http://localhost:3001/api/correo/sendEmail",options)
+    fetch("https://apirest2-mysql.onrender.com/api/correo/sendEmail",options)
     .then(resp => resp.json())
     .then(resp => {
   console.log(resp)
