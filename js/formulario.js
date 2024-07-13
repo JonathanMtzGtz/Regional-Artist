@@ -51,7 +51,7 @@ const Body = `
     <tbody>
       <tr style="height: 61px;">
         <td style="width: 590px; background-color: #3b693c; text-align: center; height: 61px;" colspan="2">
-          <h2><span style="color: #ffffff;"><strong>SE ACABA DE GENERAR UNA VACANTE: http://127.0.0.1:5500/admin.html</strong></span></h2>
+          <h2><span style="color: #ffffff;"><strong>GRACIAS POR REGISTRAR TU PARTICIPACIÓN</strong></span></h2>
         </td>
       </tr>
     </tbody>
@@ -133,8 +133,8 @@ $('#file').on('change', function(event) {
     function enviar(){
     var data = {
   
-     toEmail: "veyraabram@gmail.com",
-    fromEmail: "veyraabram@gmail.com",
+     toEmail: $("#email").val(),
+    fromEmail: "info@omodaregionalartist.com",
     html: Body
     }
   
