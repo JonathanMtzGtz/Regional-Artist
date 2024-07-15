@@ -31,6 +31,12 @@
 }
 
 @font-face {
+  font-family: Montserrat-italic;
+  src: url('../fonts/montserrat/Montserrat-Italic.ttf'); 
+}
+
+
+@font-face {
   font-family: Montserrat-SemiBold;
   src: url('../fonts/montserrat/Montserrat-SemiBold.ttf'); 
 }
@@ -40,6 +46,10 @@
   src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
 }
 
+@font-face {
+  font-family: air;
+  src: url('../fonts/Airstrike/airstrike.ttf'); 
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -53,7 +63,7 @@
 body, html {
 	height: 100%;
 
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
@@ -61,7 +71,7 @@ body, html {
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: Montserrat-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -84,10 +94,12 @@ a:hover {
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
+  
 }
 
+
 p {
-	font-family: Poppins-Regular;
+	font-family: Montserrat-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -170,6 +182,12 @@ iframe {
 
 .txt2 {
   font-family: Montserrat-Regular;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #999999;
+}
+.text-art {
+  font-family: Montserrat-italic;
   font-size: 13px;
   line-height: 1.4;
   color: #999999;
@@ -623,4 +641,7 @@ input.input100 {
 .login100-form-social-item:hover {
   background: #333333;
   color: #fff;
+}
+.text-art{
+  font-family: " Montserrat-italic",;
 }

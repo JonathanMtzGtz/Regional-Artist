@@ -1,0 +1,11 @@
+{
+  "name": "regional-artist",
+  "version": "1.0.0",
+  "description": "Autores: Abraham Vieyra : Back end\r          Kevin Mtz : Responsable\r          Jonathan Mtz : Diseñador",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
