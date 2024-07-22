@@ -788,6 +788,7 @@ tr img{ /*  imagen user  */
     .form-control{
         border-radius: 10px;
         text-align: center;
+        height: 60px !important;
         
     }
     .boton-formulario{
