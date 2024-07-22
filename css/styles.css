@@ -1036,3 +1036,48 @@ top: 10%;
     left: 25%;
     
    }
+   .bg-reto{
+    background-image: url('../images/home/bg-reto.png');
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -30px;
+   }
+   .user-formulario{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh;
+   }
+   .cent{
+
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+    height: 100vh;
+   }
+   .log-rest{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+   }
+   .text-reto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100vh;
+    margin-left: 100px;
+    margin-top: -100px;
+   }
+   .data-perfil{
+   position: relative;
+   top: 10%;
+    height: 100vh;
+   }
+   .plantilla{
+    margin-top: 20px;
+    width: 100%;
+   }
