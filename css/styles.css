@@ -44,6 +44,14 @@ body {
     height: 90vh;
 }
 
+.hero-home-2 {
+    position: relative;
+    width: 100%;
+    
+    
+  
+}
+
 .hero-home img {
     width: 100%;
     height: 100%;
@@ -60,6 +68,24 @@ body {
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
    
+}
+.hero-text-home-2 {
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    left: 5%;
+    width: 750px;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+   
+}
+.image-home-2{
+    width:220px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
 }
 
 .hero-text-home h1 {
@@ -768,7 +794,7 @@ tr img{ /*  imagen user  */
       }
       .formm{
         height:100vh;
-         overflow-y: scroll;
+         
          
      
       }
@@ -1081,4 +1107,12 @@ top: 10%;
    .plantilla{
     margin-top: 20px;
     width: 100%;
+   }
+   .form-control-file{
+    color: #D9D9D9;
+   }
+   .preguntas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
