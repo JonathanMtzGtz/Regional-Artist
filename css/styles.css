@@ -44,6 +44,14 @@ body {
     height: 90vh;
 }
 
+.hero-home-2 {
+    position: relative;
+    width: 100%;
+    
+    
+  
+}
+
 .hero-home img {
     width: 100%;
     height: 100%;
@@ -60,6 +68,24 @@ body {
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
    
+}
+.hero-text-home-2 {
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    left: 5%;
+    width: 750px;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+   
+}
+.image-home-2{
+    width:220px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
 }
 
 .hero-text-home h1 {
@@ -768,7 +794,7 @@ tr img{ /*  imagen user  */
       }
       .formm{
         height:100vh;
-         overflow-y: scroll;
+         
          
      
       }
@@ -788,6 +814,7 @@ tr img{ /*  imagen user  */
     .form-control{
         border-radius: 10px;
         text-align: center;
+        height: 60px !important;
         
     }
     .boton-formulario{
@@ -1035,4 +1062,57 @@ top: 10%;
    .card {
     left: 25%;
     
+   }
+   .bg-reto{
+    background-image: url('../images/home/bg-reto.png');
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -30px;
+   }
+   .user-formulario{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh;
+   }
+   .cent{
+
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+    height: 100vh;
+   }
+   .log-rest{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+   }
+   .text-reto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100vh;
+    margin-left: 100px;
+    margin-top: -100px;
+   }
+   .data-perfil{
+   position: relative;
+   top: 10%;
+    height: 100vh;
+   }
+   .plantilla{
+    margin-top: 20px;
+    width: 100%;
+   }
+   .form-control-file{
+    color: #D9D9D9;
+   }
+   .preguntas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
