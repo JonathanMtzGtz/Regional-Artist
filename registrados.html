@@ -37,39 +37,39 @@
    
 <body style="background-color: #30363A;">
 
-  <nav class="navbar navbar-movil navbar-expand-sm navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <!-- logo -->
-    <a class="navbar-brand" href="#">
-      <img src="images/Avatar.png" width="30" height="30" alt="">
-    </a>
-    
-    <!-- enlaces -->
-    <div class="collapse navbar-collapse" id="opciones">   
-      <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Reglas</a>
-          </li> 
-        <li class="nav-item ">
-          <a class="nav-link text-dark" href="#">Jurado</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Participa</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Login</a>
-          </li>
+    <nav class="navbar navbar-movil navbar-expand-sm navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         
-                   
-      </ul>
-    </div>
-  </nav>
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <img src="images/Avatar.png" width="30" height="30" alt="">
+        </a>
+        
+        <!-- enlaces -->
+        <div class="collapse navbar-collapse" id="opciones">   
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Solicitudes</a>
+              </li> 
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#">Aprobados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rechazados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Registrados</a>
+              </li>
+            
+                       
+          </ul>
+        </div>
+      </nav>
     <div class="row">
 
         
@@ -101,17 +101,17 @@
                     <a class="sidebar-link  sidebar-link " href="solicitudes.html" aria-expanded="false"><i class="me-3 mdi mdi-view-dashboard fs-3" aria-hidden="true"></i><span class="hide-menu text-white"><img src="images/icons/doc.svg" alt="" class="img-dash"><strong>Solicitudes</strong></a>
                   </li>
 
-                  <li class="sidebar-item selected  active  p-2 mb-2">
+                  <li class="sidebar-item selected    p-2 mb-2">
                     
-                    <a class="sidebar-link sidebar-link " href="aprobados.html" aria-expanded="false"><i class="me-3 mdi mdi-view-dashboard fs-3" aria-hidden="true"></i><span class="hide-menu text-dark "> <img src="images/icons/aprobados.svg" alt="" class="img-dash"><strong>Aprobados</strong></a>
+                    <a class="sidebar-link sidebar-link " href="aprobados.html" aria-expanded="false"><i class="me-3 mdi mdi-view-dashboard fs-3" aria-hidden="true"></i><span class="hide-menu text-white "> <img src="images/icons/aprobados.svg" alt="" class="img-dash"><strong>Aprobados</strong></a>
                   </li>
                   <li class="sidebar-item selected p-2 mb-2">
                     
                     <a class="sidebar-link  sidebar-link "  href="rechazados.html"  aria-expanded="false"><i class="me-3 mdi mdi-view-dashboard fs-3" aria-hidden="true"></i><span class="hide-menu text-white"><img src="images/icons/rechazados.svg" alt="" class="img-dash"><strong>Rechazados</strong></a>
                   </li>
-                  <li class="sidebar-item selected p-2 mb-2">
+                  <li class="sidebar-item selected p-2  active mb-2">
                     
-                    <a class="sidebar-link  sidebar-link "  href="registrados.html"  aria-expanded="false"><i class="me-3 mdi mdi-view-dashboard fs-3" aria-hidden="true"></i><span class="hide-menu text-white"><img src="images/icons/rechazados.svg" alt="" class="img-dash"><strong>Registrados</strong></a>
+                    <a class="sidebar-link  sidebar-link "  href="registrados.html"  aria-expanded="false"><i class="me-3 mdi mdi-view-dashboard fs-3" aria-hidden="true"></i><span class="hide-menu text-dark  "><img src="images/icons/rechazados.svg" alt="" class="img-dash"><strong>Registrados</strong></a>
                   </li>
             
           
@@ -143,7 +143,7 @@
                 <div class="card-hero">
                     <div class=" text-card-dasboard">
                       
-                            <h2 class="mt-2">Aprobados</h2>
+                            <h2 class="mt-2">Registrados</h2>
                             <div class="contador">
                                 <div class="text-contador">
                                     <h1 style="font-size: 50px;" id="aprobados">
@@ -175,13 +175,12 @@
                 <table class="tabla">
                     <thead class="tabla-title  ">
                         <tr >
-                            <th class="text-center text-white">Usuario</th>
+                            
                             <th class="text-center text-white">Nombre</th>
                            
                             <th class="text-center text-white">Correo</th>
                             <th class="text-center text-white">Teléfono</th>
-                            <th class="text-center text-white">Ver archivo</th>
-                            <th class="text-center text-white">Rechazar</th>
+                           
                         </tr>
                     </thead>
                     <tbody id="tbody_aprobados">

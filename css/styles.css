@@ -619,6 +619,75 @@ tr img{ /*  imagen user  */
         display: none;
         }
     }
+
+    @media (max-width: 900px) {
+        .navb-dash  {
+        display: none;
+        }
+    }
+    @media (max-width: 900px) {
+        .conten-dash  {
+       max-width:  100% !important;
+       flex: 0 0 100%;
+        }
+    }
+
+    @media (max-width: 900px) {
+        th  {
+     font-size: 12px;
+        }
+    }
+    @media (max-width: 900px) {
+        .search{
+     right: -13%;
+        }
+    }
+    @media (max-width: 900px) {
+        .accordion{
+     margin-top: 100px;
+        }
+    }
+
+     @media (max-width: 600px) {
+        .text-card-dasboard  {
+        width: 200px;
+        height: 60px;
+        }
+    }
+
+    
+    @media (max-width: 600px) {
+        .text-card-dasboard ,h2  {
+        font-size: 18px !important;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .contador img  {
+        height: 90px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .text-contador h1  {
+        height: 25px;
+        }
+    }
+    
+    
+   
+    @media (min-width: 600px) {
+        .navbar-movil  {
+        display: none;
+        }
+    }
+    @media (max-width: 600px) {
+        .card-hero-dashboard  {
+        height: 200px !important;
+        }
+    }
+   
+
     @media (max-width: 600px) {
         .bg-jurado  {
         height: 900px !important;
@@ -687,15 +756,17 @@ tr img{ /*  imagen user  */
        height: 150px !important;
         }
     }
-    @media (max-width: 600px) {
+  
+  
+  /*  @media (max-width: 600px) {
         .text-card-premios,p  {
        margin-top: -170px;
         }
-    }
+    }*/
     @media (max-width: 600px) {
-        .text-card-premios,h3 {
+        .text-card-premios {
             position: relative;
-        top: 65px;
+        top: 5px;
         }
     }
 
@@ -1026,6 +1097,11 @@ body, html {
         margin-bottom: 10px;
     }
  }
+ @media (max-width: 600px) {
+    .btn-block {
+        max-width: 70% !important;
+    }
+ }
    .pilares-text{
 position: absolute;
 top: 10%;
@@ -1094,11 +1170,33 @@ top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 50%;
     height: 100vh;
     margin-left: 100px;
     margin-top: -100px;
    }
+
+
+
+
+   @media (max-width: 600px) {
+     .text-regalo {
+      margin-top: -10px !important;
+        
+
+    }
+}
+
+
+
+   @media (max-width: 550px) {
+    .text-reto  {
+        margin-top: 0px;
+        width: 90% !important;
+        margin-left: 10px;
+
+    }
+}
    .data-perfil{
    position: relative;
    top: 10%;

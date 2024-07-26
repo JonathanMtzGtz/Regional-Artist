@@ -27,6 +27,7 @@
     <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="css/util.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
     <!--===============================================================================================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,17 +39,50 @@
 
 </head>
 <body >
+  <nav class="navbar navbar-movil navbar-expand-sm navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- logo -->
+    <a class="navbar-brand" href="#">
+      <img src="images/log.svg" width="120" height="30" alt="">
+    </a>
+    
+    <!-- enlaces -->
+    <div class="collapse navbar-collapse" id="opciones">   
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html#reglas">Reglas</a>
+          </li> 
+        <li class="nav-item ">
+          <a class="nav-link text-dark" href="index.html#jurado">Jurado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="participar.html">Participa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html">Login</a>
+          </li>
+        
+                   
+      </ul>
+    </div>
+  </nav>
     <nav class="navbar-home">
         <div class="logo-home">
             <img src="images/log.svg" alt="Logo">
         </div>
         <ul class="nav-menu-home">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#reglas">Reglas</a></li>
-            <li><a href="#jurado">Jurado</a></li>
-            <li><a href="#instrucciones">Instrucciones</a></li>
-            <li><a href="#participa">Participa</a></li>
-            <li><a href="#mas-informacion">Más Información</a></li>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#reglas">Reglas</a></li>
+            <li><a href="index.html#jurado">Jurado</a></li>
+            <li><a href="index.html#instrucciones">Instrucciones</a></li>
+            <li><a href="index.html#participa">Participa</a></li>
+            <li><a href="index.html#mas-informacion">Más Información</a></li>
             <li><a href="admin.html">Login</a></li>
         </ul>
     </nav>
@@ -64,7 +98,7 @@
 	<main>
         <section class="bg-dark ">
             <div class="row " id="mas-informacion">
-                <div class="col-12 mb-4 mt-4">
+                <div class="col-12 mb-4 mt-4 contacto-titulo">
                     <h1 class="titulo-premios text-center ">Preguntas frecuentes</h1>
                 </div>
                 <div class="col-12">
@@ -208,23 +242,25 @@
 
     <section class="bg-dark">
 
+    
+
         <div class="row preguntas">
-            <div class="col-12 mt-4 mb-4">
+            <div class="col-xs-12 col-12 mt-4 mb-4">
 
                 <h1 class="titulo-premios text-center">Contacto y soporte</h1>
             </div>
 
-            <div class="col-6">
+            <div class="col-xs-12 col-lg-6">
 
                 <img src="images/home/car.png" width="600px" alt="">
             </div>
-            <div class="col-6 text-white">
-                <h3>¿Tienes preguntas o necesitas ayuda?</h3>
-                <p class="text-white">Si tienes alguna duda o necesitas asistencia con el proceso de registro, la subida de tu diseño, o cualquier otra cuestión relacionada con el Regional Artist Challenge x OMODA, no dudes en ponerte en contacto con nuestro equipo de soporte.
+            <div class="col-xs-12 col-lg-6 text-white">
+                <h3 class="mb-4 p-4">¿Tienes preguntas o necesitas ayuda?</h3>
+                <p class="text-white mb-4 p-4">Si tienes alguna duda o necesitas asistencia con el proceso de registro, la subida de tu diseño, o cualquier otra cuestión relacionada con el Regional Artist Challenge x OMODA, no dudes en ponerte en contacto con nuestro equipo de soporte.
                 </p>
-                <h3 class="mt-4">Correo de Soporte:
+                <h3 class="mb-4 p-4">Correo de Soporte:
                 </h3>
-                <p class="text-white">
+                <p class="text-white mb-4 p-4">
                     info@omodaregionalartist.com
 Nuestro equipo está disponible para ayudarte de lunes a viernes, de 9:00 a 18:00 horas (GMT-6). Responderemos a tus consultas lo antes posible. Asegúrate de proporcionar toda la información relevante en tu mensaje para que podamos asistirte de manera eficiente.
 ¡Estamos aquí para ayudarte a que tu participación en el concurso sea una experiencia excelente!
